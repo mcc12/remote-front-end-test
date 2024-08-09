@@ -10,6 +10,7 @@ const PropertyListing = () => {
         { 
             const fetchData = async () => {
                 getPropertyListings().then((result) => {
+                    console.log(result);
                     setListings(result);
                 }); 
             }
