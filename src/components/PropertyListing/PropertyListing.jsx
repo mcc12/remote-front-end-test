@@ -6,16 +6,14 @@ import { getPropertyListings } from '../../utils';
 const PropertyListing = () => {
     const [listings, setListings] = useState([]);
     
-    useEffect(() => 
-        { 
-            const fetchData = async () => {
-                getPropertyListings().then((result) => {
-                    console.log(result);
-                    setListings(result);
-                }); 
-            }
-            fetchData();
-        }, []);
+    useEffect(() => { 
+        const fetchData = async () => {
+            getPropertyListings().then((result) => {
+                setListings(result);
+            }); 
+        }
+        fetchData();
+    }, []);
 
     return (
         <ul className="PropertyListing">
