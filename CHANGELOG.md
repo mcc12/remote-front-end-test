@@ -3,6 +3,7 @@
 ## 0.2.1 - 10-08-2024
 ### Added
 - added dataUtils module
+- added axios for network request handling
 - added getPropertyListings to dataUtils, retrieves property listings from API when called
 - added .env file for configuration
 - added babel-preset-vite plugin to devDependencies
