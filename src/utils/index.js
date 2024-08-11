@@ -1,0 +1,1 @@
+export { getPropertyListings } from './dataUtils';
